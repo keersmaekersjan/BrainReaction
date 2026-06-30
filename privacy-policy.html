@@ -24,64 +24,24 @@
   header a { text-decoration: none; }
   header h1 { font-size: 1.2rem; font-weight: 600; letter-spacing: -0.02em; color: #1a1a18; }
   header p { font-size: 0.85rem; color: #6b6a65; }
-  nav {
-    display: flex;
-    gap: 0.5rem;
-    margin-left: auto;
-    align-items: center;
-  }
+  nav { display: flex; gap: 0.5rem; margin-left: auto; align-items: center; flex-wrap: wrap; }
   nav a {
-    font-size: 0.8rem;
-    color: #5a5955;
-    text-decoration: none;
-    padding: 4px 10px;
-    border-radius: 20px;
-    border: 0.5px solid #e0ddd5;
-    background: #f8f7f4;
+    font-size: 0.8rem; color: #5a5955; text-decoration: none;
+    padding: 4px 10px; border-radius: 20px; border: 0.5px solid #e0ddd5; background: #f8f7f4;
   }
   nav a:hover { background: #eee; }
   nav a.active { background: #1a1a18; color: #fff; border-color: #1a1a18; }
-  main {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 3rem 2rem 4rem;
-  }
-  h1.page-title {
-    font-size: 1.7rem;
-    font-weight: 600;
-    letter-spacing: -0.02em;
-    margin-bottom: 0.3rem;
-  }
-  .effective-date {
-    font-size: 0.8rem;
-    color: #9a9890;
-    margin-bottom: 2.5rem;
-    display: block;
-  }
-  h2 {
-    font-size: 1rem;
-    font-weight: 600;
-    margin-top: 2rem;
-    margin-bottom: 0.5rem;
-    color: #1a1a18;
-  }
+  main { max-width: 720px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+  h1.page-title { font-size: 1.7rem; font-weight: 600; letter-spacing: -0.02em; margin-bottom: 0.3rem; }
+  .effective-date { font-size: 0.8rem; color: #9a9890; margin-bottom: 2.5rem; display: block; }
+  h2 { font-size: 1rem; font-weight: 600; margin-top: 2rem; margin-bottom: 0.5rem; color: #1a1a18; }
   p { margin-bottom: 1rem; font-size: 0.925rem; color: #3a3935; }
-  ul, ol {
-    margin: 0.25rem 0 1rem 1.5rem;
-    font-size: 0.925rem;
-    color: #3a3935;
-  }
+  ul, ol { margin: 0.25rem 0 1rem 1.5rem; font-size: 0.925rem; color: #3a3935; }
   li { margin-bottom: 0.3rem; }
   a { color: #1a73e8; }
   hr { border: none; border-top: 0.5px solid #e0ddd5; margin: 1.5rem 0; }
   strong { font-weight: 600; }
-  footer {
-    text-align: center;
-    padding: 2rem;
-    font-size: 0.78rem;
-    color: #9a9890;
-    border-top: 0.5px solid #e0ddd5;
-  }
+  footer { text-align: center; padding: 2rem; font-size: 0.78rem; color: #9a9890; border-top: 0.5px solid #e0ddd5; }
 </style>
 </head>
 <body>
@@ -101,88 +61,31 @@
 </header>
 <main>
   <h1 class="page-title">Privacy Policy</h1>
-  <span class="effective-date">Effective date: 2026-06-18</span>
+  <span class="effective-date">Effective date: 2026-04-02</span>
 
-  <p>This privacy policy applies to all applications published on Google Play by Brain Reaction (hereby referred to as "Service Provider"). Each Application is provided as-is, either as a free, freemium, or paid service.</p>
+  <p>Brain Reaction ("we", "the Service Provider") publishes several Android applications, each with its own data practices. Because the apps differ in what they collect and which third-party services they use, each app has its own detailed privacy policy:</p>
 
-  <hr>
-
-  <h2>What Information Is Collected</h2>
-  <p>Depending on the specific Application, the Service Provider may collect the following categories of information:</p>
   <ul>
-    <li>Basic device information such as operating system version, used to ensure correct functioning of the Application.</li>
-    <li>Usage data such as screens or features accessed and time spent in the Application, collected in aggregate and anonymised form.</li>
-    <li>Information you explicitly provide, such as an email address, when required by a specific feature (e.g. email alerts).</li>
-  </ul>
-  <p>The Service Provider does <strong>not</strong> collect precise location data.<br>
-  The Service Provider does <strong>not</strong> use Artificial Intelligence technologies to process your personal data.<br>
-  The Service Provider does <strong>not</strong> sell your personal data to third parties.</p>
-  <p>Where an Application integrates with a third-party service (such as Google Sign-In or Google Photos), access is limited strictly to what is needed for the feature you use, and your data is not transmitted to any server operated by the Service Provider.</p>
-
-  <hr>
-
-  <h2>How Information Is Used</h2>
-  <p>Information collected is used solely to:</p>
-  <ul>
-    <li>operate and improve the Applications;</li>
-    <li>respond to support requests;</li>
-    <li>send important notices related to the Application, where you have provided contact details.</li>
+    <li><a href="privacy-multiplication-monsters.html">Multiplication Monsters</a> &mdash; for children, includes RevenueCat in-app purchase</li>
+    <li><a href="privacy-spelling-stickers.html">Spelling Stickers</a> &mdash; for children</li>
+    <li><a href="privacy-fotoframe.html">FotoFrame</a> &mdash; uses Google Photos access</li>
+    <li><a href="privacy-batteryguard.html">BatteryGuard</a> &mdash; sends email alerts</li>
   </ul>
 
   <hr>
 
-  <h2>Third-Party Services</h2>
-  <p>Some Applications use third-party services that have their own privacy policies. Common third-party services used across Applications include:</p>
-  <ul>
-    <li><a href="https://www.google.com/policies/privacy/">Google Play Services</a></li>
-    <li><a href="https://expo.io/privacy">Expo</a></li>
-  </ul>
-  <p>The Service Provider may disclose information only:</p>
-  <ul>
-    <li>as required by law, such as to comply with a subpoena or similar legal process;</li>
-    <li>when necessary in good faith to protect rights, safety, or to investigate fraud;</li>
-    <li>with trusted service providers acting on the Service Provider's behalf, who are bound by this policy.</li>
-  </ul>
+  <h2>What all our apps have in common</h2>
+  <p>None of our apps sell or trade your data. None use advertising networks. Most data stays on your device and is never transmitted to us. Where a third-party service (such as Google Play Services, Expo, RevenueCat, or an SMTP provider) is used, it is named explicitly in the relevant app's policy above, along with what it receives and why.</p>
 
-  <hr>
-
-  <h2>Data Storage and Retention</h2>
-  <p>Where personal data is stored locally on your device, it remains under your control and can be removed by uninstalling the Application. Where the Service Provider retains any user-provided data, it will be kept only for as long as necessary to provide the service. To request deletion, contact the Service Provider at <a href="mailto:keersmaekersjan@gmail.com">keersmaekersjan@gmail.com</a>.</p>
-
-  <hr>
-
-  <h2>Children</h2>
-  <p>The Applications are not directed at children under the age of 13. The Service Provider does not knowingly collect personal information from children under 13. If you believe a child has provided personal information through an Application, please contact <a href="mailto:keersmaekersjan@gmail.com">keersmaekersjan@gmail.com</a>.</p>
-
-  <hr>
-
-  <h2>Security</h2>
-  <p>The Service Provider takes reasonable technical and procedural measures to protect your information. Authentication tokens, where applicable, are stored in encrypted local storage on your device.</p>
-
-  <hr>
-
-  <h2>Your Rights</h2>
-  <p>You have the right to:</p>
-  <ul>
-    <li>request access to any personal data the Service Provider holds about you;</li>
-    <li>request correction or deletion of your personal data;</li>
-    <li>withdraw consent at any time by uninstalling the Application.</li>
-  </ul>
-  <p>To exercise any of these rights, contact <a href="mailto:keersmaekersjan@gmail.com">keersmaekersjan@gmail.com</a>.</p>
-
-  <hr>
-
-  <h2>Changes to This Policy</h2>
-  <p>This Privacy Policy may be updated from time to time. The Service Provider will notify you of material changes by updating the effective date at the top of this page. Continued use of an Application after changes are posted constitutes acceptance of those changes.</p>
-
-  <hr>
+  <h2>Your Rights (GDPR &mdash; EU/EEA users)</h2>
+  <p>Because the Service Provider is based in Belgium, EU/EEA users have rights under the General Data Protection Regulation (GDPR), including the right to access, correct, or request deletion of any personal data, and the right to lodge a complaint with the Belgian Data Protection Authority (<a href="https://www.gegevensbeschermingsautoriteit.be" target="_blank">www.gegevensbeschermingsautoriteit.be</a>).</p>
 
   <h2>Contact</h2>
   <p><strong>Brain Reaction</strong><br>
   Email: <a href="mailto:keersmaekersjan@gmail.com">keersmaekersjan@gmail.com</a></p>
 </main>
 <footer>
-  &copy; 2025 brainreaction &nbsp;·&nbsp; <a href="mailto:keersmaekersjan@gmail.com">keersmaekersjan@gmail.com</a>
+  &copy; 2026 brainreaction &nbsp;&middot;&nbsp; <a href="mailto:keersmaekersjan@gmail.com">keersmaekersjan@gmail.com</a>
 </footer>
 </body>
 </html>

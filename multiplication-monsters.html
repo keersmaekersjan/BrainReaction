@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Multiplication Monsters — Times Tables Game for Kids | brainreaction</title>
+<meta name="description" content="Multiplication Monsters is a free Android game that helps kids learn their times tables by battling friendly monsters. Fun, no-pressure multiplication practice for ages 6-12.">
+<link rel="canonical" href="https://brainreaction.eu/multiplication-monsters.html">
+<link rel="icon" href="favicon.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Multiplication Monsters — Times Tables Game for Kids">
+<meta property="og:description" content="A free Android game that turns times-tables practice into a monster-battling adventure. Kids learn multiplication facts while having fun.">
+<meta property="og:image" content="https://brainreaction.eu/icon-multiplication-monsters.png">
+<meta property="og:url" content="https://brainreaction.eu/multiplication-monsters.html">
+<meta property="og:site_name" content="brainreaction">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Multiplication Monsters — Times Tables Game for Kids">
+<meta name="twitter:description" content="A free Android game that turns times-tables practice into a monster-battling adventure.">
+<meta name="twitter:image" content="https://brainreaction.eu/icon-multiplication-monsters.png">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Multiplication Monsters",
+  "alternateName": "Maaltafel Monsters",
+  "applicationCategory": "EducationalApplication",
+  "operatingSystem": "Android",
+  "url": "https://brainreaction.eu/multiplication-monsters.html",
+  "image": "https://brainreaction.eu/icon-multiplication-monsters.png",
+  "description": "Multiplication Monsters is a free Android game that helps kids learn their times tables by battling friendly monsters.",
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "EUR"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "brainreaction",
+    "url": "https://brainreaction.eu/"
+  },
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.brainreaction.multiplicationmonsters"
+}
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f8f7f4;
+    color: #1a1a18;
+    line-height: 1.7;
+  }
+  header {
+    background: #ffffff;
+    border-bottom: 0.5px solid #e0ddd5;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  header img.logo { width: 48px; height: 48px; }
+  header a { text-decoration: none; }
+  header h2.brand { font-size: 1.2rem; font-weight: 600; letter-spacing: -0.02em; color: #1a1a18; }
+  header p.tagline { font-size: 0.85rem; color: #6b6a65; }
+  nav { display: flex; gap: 0.5rem; margin-left: auto; align-items: center; flex-wrap: wrap; }
+  nav a {
+    font-size: 0.8rem; color: #5a5955; text-decoration: none;
+    padding: 4px 10px; border-radius: 20px; border: 0.5px solid #e0ddd5; background: #f8f7f4;
+  }
+  nav a:hover { background: #eee; }
+  main { max-width: 760px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+
+  .hero { display: flex; gap: 1.75rem; align-items: center; margin-bottom: 2.5rem; flex-wrap: wrap; }
+  .hero img.app-icon { width: 112px; height: 112px; border-radius: 24px; flex-shrink: 0; }
+  .hero-text { flex: 1; min-width: 240px; }
+  h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.4rem; }
+  .subtitle { font-size: 1.05rem; color: #5a5955; margin-bottom: 1rem; }
+  .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+  .tag {
+    font-size: 0.72rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+    padding: 3px 10px; border-radius: 20px; background: #eef6ee; color: #2f7a3a;
+  }
+  .cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #1a1a18; color: #fff; text-decoration: none;
+    padding: 0.8rem 1.4rem; border-radius: 10px; font-size: 0.95rem; font-weight: 600;
+  }
+  .cta:hover { background: #333; }
+  .cta svg { width: 16px; height: 16px; fill: #fff; flex-shrink: 0; }
+
+  h2.section-title { font-size: 1.1rem; font-weight: 600; margin: 2.5rem 0 1rem; }
+  p { font-size: 0.95rem; color: #3a3935; margin-bottom: 1rem; }
+  ul.features { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.9rem; margin-bottom: 1rem; }
+  ul.features li {
+    background: #fff; border: 0.5px solid #e0ddd5; border-radius: 12px;
+    padding: 1rem 1.1rem; font-size: 0.9rem; color: #3a3935;
+  }
+  ul.features li strong { display: block; font-size: 0.9rem; color: #1a1a18; margin-bottom: 0.25rem; }
+
+  .faq dt { font-weight: 600; font-size: 0.92rem; margin-top: 1.2rem; color: #1a1a18; }
+  .faq dd { font-size: 0.9rem; color: #3a3935; margin-top: 0.25rem; }
+
+  footer {
+    text-align: center; font-size: 0.8rem; color: #9a9890;
+    padding: 2rem; border-top: 0.5px solid #e0ddd5; margin-top: 2rem;
+  }
+  footer a { color: #5a5955; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html"><img class="logo" src="logo-brainreaction.png" alt="brainreaction logo"></a>
+  <a href="index.html" style="text-decoration:none">
+    <div>
+      <h2 class="brand">brainreaction</h2>
+      <p class="tagline">Smart, simple apps</p>
+    </div>
+  </a>
+  <nav>
+    <a href="index.html">Apps</a>
+    <a href="privacy-multiplication-monsters.html">Privacy</a>
+    <a href="terms-of-service.html">Terms</a>
+  </nav>
+</header>
+
+<main>
+
+  <div class="hero">
+    <img class="app-icon" src="icon-multiplication-monsters.png" alt="Multiplication Monsters app icon">
+    <div class="hero-text">
+      <h1>Multiplication Monsters</h1>
+      <p class="subtitle">The times tables game that turns multiplication practice into a monster-battling adventure for kids.</p>
+      <div class="tags">
+        <span class="tag">Free</span>
+        <span class="tag">Ages 6-12</span>
+        <span class="tag">Android</span>
+      </div>
+      <a class="cta" href="https://play.google.com/store/apps/details?id=com.brainreaction.multiplicationmonsters" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.18 23.76c.3.17.65.2.98.07l12.56-7.25-2.89-2.89-10.65 10zM.75 1.03C.28 1.38 0 1.96 0 2.67v18.66c0 .71.28 1.29.75 1.64l.09.08 10.46-10.46v-.25L.84.95l-.09.08zM22.07 10.3l-2.84-1.64-3.19 3.19 3.19 3.19 2.86-1.65c.82-.47.82-1.24-.02-1.71v.62zM4.16.24l12.56 7.25-2.89 2.89L3.18.24C3.5.11 3.86.14 4.16.24z"></path></svg>
+        Get it on Google Play
+      </a>
+    </div>
+  </div>
+
+  <h2 class="section-title">About Multiplication Monsters</h2>
+  <p>While your child was asleep, mischievous monsters snuck in and stole their toys! The only way to win them back is by defeating the monsters — one times table at a time.</p>
+  <p>Multiplication Monsters replaces repetitive multiplication drills with battle-style gameplay. Kids pick which times tables they want to practice, answer multiplication questions to defeat monsters, and unlock new magical worlds as they go. A dedicated Practice Room lets them drill specific tables at their own pace, without a timer, whenever they just want to warm up.</p>
+  <p>In the Netherlands and Belgium, the app is also listed as <strong>Maaltafel Monsters</strong> for Dutch-speaking families.</p>
+
+  <h2 class="section-title">Why kids and parents like it</h2>
+  <ul class="features">
+    <li><strong>Learn by playing</strong>Multiplication facts are practiced through gameplay, not flashcards, so kids stay motivated.</li>
+    <li><strong>Choose your tables</strong>Focus practice on exactly the times tables that need work.</li>
+    <li><strong>Practice Room</strong>Untimed, pressure-free practice whenever your child wants to warm up.</li>
+    <li><strong>Five magical worlds</strong>Progress through different worlds as monsters are defeated and toys are won back.</li>
+  </ul>
+
+  <h2 class="section-title">Frequently asked questions</h2>
+  <dl class="faq">
+    <dt>Is Multiplication Monsters free?</dt>
+    <dd>Yes, the app is free to download, with optional in-app purchases.</dd>
+
+    <dt>What age is Multiplication Monsters for?</dt>
+    <dd>It's designed for kids roughly ages 6 to 12 who are learning or reviewing their multiplication tables (PEGI 3).</dd>
+
+    <dt>Is Multiplication Monsters available in Dutch?</dt>
+    <dd>Yes — on the Dutch-language Play Store it's listed as "Maaltafel Monsters".</dd>
+
+    <dt>What platforms does it run on?</dt>
+    <dd>Multiplication Monsters is available for Android phones and tablets via Google Play.</dd>
+  </dl>
+
+  <h2 class="section-title">Get the app</h2>
+  <p>
+    <a class="cta" href="https://play.google.com/store/apps/details?id=com.brainreaction.multiplicationmonsters" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.18 23.76c.3.17.65.2.98.07l12.56-7.25-2.89-2.89-10.65 10zM.75 1.03C.28 1.38 0 1.96 0 2.67v18.66c0 .71.28 1.29.75 1.64l.09.08 10.46-10.46v-.25L.84.95l-.09.08zM22.07 10.3l-2.84-1.64-3.19 3.19 3.19 3.19 2.86-1.65c.82-.47.82-1.24-.02-1.71v.62zM4.16.24l12.56 7.25-2.89 2.89L3.18.24C3.5.11 3.86.14 4.16.24z"></path></svg>
+      Get it on Google Play
+    </a>
+  </p>
+
+</main>
+
+<footer>
+  brainreaction &middot; <a href="index.html">All apps</a> &middot; <a href="privacy-multiplication-monsters.html">Privacy policy</a> &middot; <a href="terms-of-service.html">Terms</a>
+</footer>
+
+</body>
+</html>

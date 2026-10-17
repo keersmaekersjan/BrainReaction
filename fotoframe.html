@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FotoFrame &ndash; Digital Photo Frame for iPad, iPhone and Android | brainreaction</title>
+<meta name="description" content="FotoFrame turns an old iPad or tablet into a digital photo frame. Show photos from your device or Google Photos in a looping slideshow. No subscription, no account needed.">
+<link rel="canonical" href="https://brainreaction.eu/fotoframe.html">
+<link rel="icon" href="favicon.png">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="FotoFrame &ndash; Digital Photo Frame for iPad, iPhone and Android">
+<meta property="og:description" content="Give your old iPad a second life as a digital photo frame. No subscription, no account needed.">
+<meta property="og:image" content="https://brainreaction.eu/icon-fotoframe.png">
+<meta property="og:url" content="https://brainreaction.eu/fotoframe.html">
+<meta property="og:site_name" content="brainreaction">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="FotoFrame &ndash; Digital Photo Frame for iPad, iPhone and Android">
+<meta name="twitter:description" content="Give your old iPad a second life as a digital photo frame.">
+<meta name="twitter:image" content="https://brainreaction.eu/icon-fotoframe.png">
+
+<!-- Structured data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "FotoFrame",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "iOS, iPadOS, Android",
+  "url": "https://brainreaction.eu/fotoframe.html",
+  "image": "https://brainreaction.eu/icon-fotoframe.png",
+  "description": "FotoFrame turns an old iPad or tablet into a digital photo frame with photos from your device or Google Photos.",
+  "inLanguage": "en",
+  "publisher": {
+    "@type": "Organization",
+    "name": "brainreaction",
+    "url": "https://brainreaction.eu/"
+  },
+  "downloadUrl": "https://play.google.com/store/apps/details?id=com.brainreaction.fotoframe"
+}
+</script>
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background: #f8f7f4;
+    color: #1a1a18;
+    line-height: 1.7;
+  }
+  header {
+    background: #ffffff;
+    border-bottom: 0.5px solid #e0ddd5;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  header img.logo { width: 48px; height: 48px; }
+  header a { text-decoration: none; }
+  header h2.brand { font-size: 1.2rem; font-weight: 600; letter-spacing: -0.02em; color: #1a1a18; }
+  header p.tagline { font-size: 0.85rem; color: #6b6a65; }
+  nav { display: flex; gap: 0.5rem; margin-left: auto; align-items: center; flex-wrap: wrap; }
+  nav a {
+    font-size: 0.8rem; color: #5a5955; text-decoration: none;
+    padding: 4px 10px; border-radius: 20px; border: 0.5px solid #e0ddd5; background: #f8f7f4;
+  }
+  nav a:hover { background: #eee; }
+  main { max-width: 760px; margin: 0 auto; padding: 3rem 2rem 4rem; }
+
+  .hero { display: flex; gap: 1.75rem; align-items: center; margin-bottom: 2.5rem; flex-wrap: wrap; }
+  .hero img.app-icon { width: 112px; height: 112px; border-radius: 24px; flex-shrink: 0; }
+  .hero-text { flex: 1; min-width: 240px; }
+  h1 { font-size: 2rem; font-weight: 700; letter-spacing: -0.02em; margin-bottom: 0.4rem; }
+  .subtitle { font-size: 1.05rem; color: #5a5955; margin-bottom: 1rem; }
+  .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin-bottom: 1rem; }
+  .tag {
+    font-size: 0.72rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase;
+    padding: 3px 10px; border-radius: 20px; background: #eef6ee; color: #2f7a3a;
+  }
+  .cta {
+    display: inline-flex; align-items: center; gap: 8px;
+    background: #1a1a18; color: #fff; text-decoration: none;
+    padding: 0.8rem 1.4rem; border-radius: 10px; font-size: 0.95rem; font-weight: 600;
+  }
+  .cta:hover { background: #333; }
+  .cta svg { width: 16px; height: 16px; fill: #fff; flex-shrink: 0; }
+
+  h2.section-title { font-size: 1.1rem; font-weight: 600; margin: 2.5rem 0 1rem; }
+  p { font-size: 0.95rem; color: #3a3935; margin-bottom: 1rem; }
+  ul.features { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.9rem; margin-bottom: 1rem; }
+  ul.features li {
+    background: #fff; border: 0.5px solid #e0ddd5; border-radius: 12px;
+    padding: 1rem 1.1rem; font-size: 0.9rem; color: #3a3935;
+  }
+  ul.features li strong { display: block; font-size: 0.9rem; color: #1a1a18; margin-bottom: 0.25rem; }
+
+  .faq dt { font-weight: 600; font-size: 0.92rem; margin-top: 1.2rem; color: #1a1a18; }
+  .faq dd { font-size: 0.9rem; color: #3a3935; margin-top: 0.25rem; }
+
+  footer {
+    text-align: center; font-size: 0.8rem; color: #9a9890;
+    padding: 2rem; border-top: 0.5px solid #e0ddd5; margin-top: 2rem;
+  }
+  footer a { color: #5a5955; }
+</style>
+</head>
+<body>
+
+<header>
+  <a href="index.html"><img class="logo" src="logo-brainreaction.png" alt="brainreaction logo"></a>
+  <a href="index.html" style="text-decoration:none">
+    <div>
+      <h2 class="brand">brainreaction</h2>
+      <p class="tagline">Smart, simple apps</p>
+    </div>
+  </a>
+  <nav>
+    <a href="index.html">Apps</a>
+    <a href="privacy-fotoframe.html">Privacy</a>
+    <a href="terms-of-service.html">Terms</a>
+  </nav>
+</header>
+
+<main>
+
+  <div class="hero">
+    <img class="app-icon" src="icon-fotoframe.png" alt="FotoFrame app icon">
+    <div class="hero-text">
+      <h1>FotoFrame</h1>
+      <p class="subtitle">Turn an old iPad or tablet into a digital photo frame &mdash; no subscription, no extra hardware.</p>
+      <div class="tags">
+        <span class="tag">No subscription</span>
+        <span class="tag">iPad &amp; iPhone</span>
+        <span class="tag">Android</span>
+      </div>
+      <a class="cta" href="https://play.google.com/store/apps/details?id=com.brainreaction.fotoframe" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.18 23.76c.3.17.65.2.98.07l12.56-7.25-2.89-2.89-10.65 10zM.75 1.03C.28 1.38 0 1.96 0 2.67v18.66c0 .71.28 1.29.75 1.64l.09.08 10.46-10.46v-.25L.84.95l-.09.08zM22.07 10.3l-2.84-1.64-3.19 3.19 3.19 3.19 2.86-1.65c.82-.47.82-1.24-.02-1.71v.62zM4.16.24l12.56 7.25-2.89 2.89L3.18.24C3.5.11 3.86.14 4.16.24z"></path></svg>
+        Get it on Google Play
+      </a>
+      <!-- Enable when the iOS app is live; swap for Apple's official badge if you like.
+      <a class="cta" href="https://apps.apple.com/app/id6823955842" target="_blank" rel="noopener">Download on the App Store</a>
+      -->
+    </div>
+  </div>
+
+  <h2 class="section-title">About FotoFrame</h2>
+  <p>That old iPad in the drawer still has a beautiful screen. FotoFrame gives it a second life as a digital photo frame: a calm, full-screen slideshow of your favourite photos that crossfades from one picture to the next.</p>
+  <p>Show photos from your device, or pick them from Google Photos. You don't need an account to get started &mdash; try the built-in demo slideshow first, or choose photos from the library on your device.</p>
+
+  <h2 class="section-title">Features</h2>
+  <ul class="features">
+    <li><strong>Photos from your device</strong>Pick photos from the library on your iPad, iPhone or Android device. No login needed.</li>
+    <li><strong>Google Photos</strong>Choose photos with Google's own picker. FotoFrame only sees the photos you select, never your whole library.</li>
+    <li><strong>Built for an always-on frame</strong>Stays awake, loops forever, resumes by itself when you reopen the app, and keeps playing through short connection drops.</li>
+    <li><strong>Your pace</strong>Choose how long each photo stays (5 seconds to 1 minute), shuffle on or off, swipe to skip, tap to pause.</li>
+    <li><strong>Portrait photos look good</strong>Photos that don't fill the screen get a soft blurred background instead of black bars.</li>
+    <li><strong>Private by design</strong>No account with us, no ads, no analytics. Your photos never leave your device and Google.</li>
+  </ul>
+
+  <h2 class="section-title">Set up your frame</h2>
+  <p><strong>On iPad and iPhone</strong></p>
+  <ul class="features">
+    <li><strong>Keep the screen on</strong>Settings &rarr; Display &amp; Brightness &rarr; Auto-Lock &rarr; Never. Keep the iPad plugged in.</li>
+    <li><strong>Lock it to FotoFrame</strong>Settings &rarr; Accessibility &rarr; Guided Access &rarr; On. Then, with the slideshow playing, triple-click the side or Home button and tap Start. This stops accidental taps from leaving the app.</li>
+    <li><strong>After a restart or power cut</strong>Guided Access has to be started again by hand. Open FotoFrame and it picks up your slideshow by itself.</li>
+  </ul>
+  <p><strong>On Android</strong></p>
+  <p>Set the screen timeout to the longest setting, keep the device plugged in, and use Screen pinning (Settings &rarr; Security) to lock it to FotoFrame.</p>
+
+  <h2 class="section-title">Frequently asked questions</h2>
+  <dl class="faq">
+    <dt>Do I need a Google account?</dt>
+    <dd>No. You can use photos from your device or the demo slideshow. A Google account is only needed if you want to show photos from Google Photos.</dd>
+
+    <dt>Does FotoFrame upload or store my photos?</dt>
+    <dd>No. We don't run any servers. Photos from Google Photos are streamed from Google to your device, and photos from your device stay on your device. See the <a href="privacy-fotoframe.html">privacy policy</a>.</dd>
+
+    <dt>Why can't it start Guided Access by itself?</dt>
+    <dd>Apple only allows Guided Access to be started by the user (or by a managed-device administrator). That is why it needs a triple-click after every restart.</dd>
+
+    <dt>My Google Photos selection stopped working.</dt>
+    <dd>Google Photos selections are time-limited by Google. If yours has expired, FotoFrame says so; open the app and choose your photos again. Photos from your device never expire.</dd>
+
+    <dt>Can I mix Google Photos and device photos?</dt>
+    <dd>Not in the same slideshow. Use "New Selection" to switch between the two.</dd>
+
+    <dt>Which devices does it run on?</dt>
+    <dd>iPad and iPhone (iPadOS/iOS), and Android phones and tablets.</dd>
+
+    <dt>I need help.</dt>
+    <dd>Email <a href="mailto:keersmaekersjan@gmail.com">keersmaekersjan@gmail.com</a> and we'll get back to you.</dd>
+  </dl>
+
+  <h2 class="section-title">Get the app</h2>
+  <p>
+    <a class="cta" href="https://play.google.com/store/apps/details?id=com.brainreaction.fotoframe" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3.18 23.76c.3.17.65.2.98.07l12.56-7.25-2.89-2.89-10.65 10zM.75 1.03C.28 1.38 0 1.96 0 2.67v18.66c0 .71.28 1.29.75 1.64l.09.08 10.46-10.46v-.25L.84.95l-.09.08zM22.07 10.3l-2.84-1.64-3.19 3.19 3.19 3.19 2.86-1.65c.82-.47.82-1.24-.02-1.71v.62zM4.16.24l12.56 7.25-2.89 2.89L3.18.24C3.5.11 3.86.14 4.16.24z"></path></svg>
+        Get it on Google Play
+      </a>
+  </p>
+
+</main>
+
+<footer>
+  brainreaction &middot; <a href="index.html">All apps</a> &middot; <a href="privacy-fotoframe.html">Privacy policy</a> &middot; <a href="terms-of-service.html">Terms</a>
+</footer>
+
+</body>
+</html>
